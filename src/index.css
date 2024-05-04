@@ -8,3 +8,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+      @apply border-2 border-small-heading p-1 w-[120px] h-[45px] hover:bg-small-heading hover:text-white font-medium hover:font-semibold text-sm text-small-heading;
+  }
+
+  .myGrid {
+    @apply grid grid-cols-12 gap-3
+  }
+
+  .top-header {
+    @apply text-sm text-center font-medium text-small-heading uppercase
+  }
+
+
+  .heading{
+    @apply text-3xl dark:text-white text-left font-semibold
+  }
+
+  .subtext{
+    @apply text-left text-sm tracking-wide leading-loose
+  }
+
+  .cardContainer {
+    @apply w-full flex items-center 
+  }
+}

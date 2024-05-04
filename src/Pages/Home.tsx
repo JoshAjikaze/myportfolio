@@ -1,10 +1,14 @@
+import Banner from "../Components/Banner"
+import Services from "../Components/Services"
 
 function Home() {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center gap-y-10">
-      <p className="text-5xl font-bold">In Progress</p>
-      <p className="text-5xl animate-spin-slow">⚙️</p>
-    </div>
+    <main className="w-full xl:px-[50px] min-h-screen bg-white dark:bg-primary-bg dark:text-white flex flex-col items-center">
+
+    <Banner />
+    <Services />
+
+    </main>
   )
 }
 
